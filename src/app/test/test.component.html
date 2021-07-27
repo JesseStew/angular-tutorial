@@ -1,6 +1,4 @@
-<p>Welcome {{name}}</p>
-<p>{{2+2}}</p>
-<p> {{ "Welcome " + name }} </p>
-<p> {{ name.length }} </p>
-<p> {{name.toUpperCase()}} </p>
-<p> {{ greetUser() }}</p>
+<h2>Welcome <span class="text-success"> {{name}} </span></h2>
+<h2 [class]="successClass">Codevolution</h2>
+<h2 [class.text-danger]="hasError">Codevolution</h2>
+<h2 [ngClass]="messageClasses">Codevolution</h2>
