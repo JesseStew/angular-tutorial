@@ -1,6 +1,4 @@
 <p>Welcome {{name}}</p>
-<p>{{2+2}}</p>
-<p> {{ "Welcome " + name }} </p>
-<p> {{ name.length }} </p>
-<p> {{name.toUpperCase()}} </p>
-<p> {{ greetUser() }}</p>
+<input [id]="myId" type="text" value="Jesse">
+<input [disabled]="true" id={{myId}} type="text" value="Jesse">
+<input bind-disabled="false" id={{myId}} type="text" value="Jesse">
