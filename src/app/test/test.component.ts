@@ -11,11 +11,10 @@ export class TestComponent implements OnInit {
   public successClass = "text-success"
   public hasError = true
   public isSpecial = true
-
-  public messageClasses = {
-    "text-success": !this.hasError,
-    "text-danger": this.hasError,
-    "text-special": this.isSpecial
+  public highlightColor = "orange"
+  public titleStyles = {
+    fontStyle: "italic",
+    color: "blue",
   }
 
   constructor() { }
