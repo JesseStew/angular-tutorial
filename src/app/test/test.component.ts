@@ -16,6 +16,7 @@ export class TestComponent implements OnInit {
     fontStyle: "italic",
     color: "blue",
   }
+  public greeting = ""
 
   constructor() { }
 
@@ -24,6 +25,12 @@ export class TestComponent implements OnInit {
 
   greetUser(){
     return "Hello " + this.name
+  }
+
+  onClick(event: any){
+    console.log("Welcome")
+    console.log(event)
+    this.greeting = event.type
   }
 
 }

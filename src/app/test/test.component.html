@@ -1,5 +1,4 @@
 <h2>Welcome <span class="text-success"> {{name}} </span></h2>
-<h2 [style.color]="'orange'">Style Binding</h2>
-<h2 [style.color]="hasError ? 'red' : 'green'">Style Binding</h2>
-<h2 [style.color]="highlightColor">Style Binding</h2>
-<h2 [ngStyle]="titleStyles">Style Binding</h2>
+<button (click)="onClick($event)">Greet</button>
+{{greeting}}
+<button (click)="greeting='Welcome'">Greet</button>
