@@ -33,4 +33,8 @@ export class TestComponent implements OnInit {
     this.greeting = event.type
   }
 
+  logMessage(value: any) {
+    console.log(value)
+  }
+
 }

@@ -1,4 +1,3 @@
 <h2>Welcome <span class="text-success"> {{name}} </span></h2>
-<button (click)="onClick($event)">Greet</button>
-{{greeting}}
-<button (click)="greeting='Welcome'">Greet</button>
+<input #myInput type="text">
+<button (click)="logMessage(myInput.value)">Log</button>
