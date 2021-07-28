@@ -1,2 +1,16 @@
-<input [(ngModel)]="name" type="text">
-{{name}}
+<h2 *ngIf="displayName; else elseBlock">
+  Codevolution
+</h2>
+<ng-template #elseBlock>
+  <h2>Name is hidden</h2>
+</ng-template>
+
+<div *ngIf="expression; then thenBlock; else eblock"></div>
+
+<ng-template #thenBlock>
+  <h2>thenBlock</h2>
+</ng-template>
+
+<ng-template #eblock>
+  <h2>eblock</h2>
+</ng-template>

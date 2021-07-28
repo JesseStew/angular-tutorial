@@ -12,6 +12,9 @@ export class TestComponent implements OnInit {
   public hasError = true
   public isSpecial = true
   public highlightColor = "orange"
+  public displayName = false
+  public expression = false
+
   public titleStyles = {
     fontStyle: "italic",
     color: "blue",
