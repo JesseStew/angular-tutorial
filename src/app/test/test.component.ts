@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  public colors = ["red", "green", "blue", "yellow"]
+  public name = "Codevolution"
+  public date = new Date
+  public message = "Welcome to Codevolution"
+  public person = {
+    "firstName": "John",
+    "lastName": "Doe",
+  }
 
   constructor() { }
 
