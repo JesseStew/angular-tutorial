@@ -10,7 +10,8 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
 import { EmployeeService } from './employee.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartmentListComponent } from './department-list/department-list.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DepartmentDetailComponent } from './department-detail/department-detail.component'
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     EmployeeDetailComponent,
     routingComponents,
     PageNotFoundComponent,
+    DepartmentDetailComponent,
   ],
   imports: [
     BrowserModule,
